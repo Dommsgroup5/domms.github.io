@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domm's - Innovación en Desarrollo de Software</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">DOMM´S</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Servicios</a
+            >
+            <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownId"
+            >
+                <a class="dropdown-item" href="webs.html"
+                    >Webs</a
+                >
+                <a class="dropdown-item" href="apps.html"
+                    >Softwares y apps</a
+                >
+            </div>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cotiza.html">cotiza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div style="text-align: center;" class="container">
+    <h1>Cotiza tu  pagina web</h1>
+    <h5>¿Como se estima el precio de una pagina web?</h5>
+    <h5>¡¡Aqui te lo mostramos!!</h5>
+    <br>
+    <h6>Te lo mostramos en esta tabla:</h6>
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-striped table-hover table-borderless table-primary align-middle"
+        >
+            <thead class="table-dark">
+                <tr>
+                    <th>Objeto</th>
+                    <th>Precio unitario</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr
+                    class="table-primary"
+                >
+                    <td scope="row">Banner interactivo de cabecera</td>
+                    <td>$ 25.00</td>
+                    
+                </tr>
+                <tr
+                    class="table-primary"
+                >
+                    <td scope="row">Menús desplegables con 3 categorias por productos y por servicios con filtros</td>
+                    <td>$ 20.00</td>
+                </tr>
+                <tr
+                    class="table-primary"
+                >
+                    <td scope="row">Galería de imágenes 1-10 imágenes</td>
+                    <td>$ 25.00</td>
+                </tr>
+                <tr
+                    class="table-primary"
+                >
+                    <td scope="row">Galería de imágenes 10-15 imágenes</td>
+                    <td>$ 30.00</td>
+                </tr>
+                <tr
+                    class="table-primary"
+                >
+                    <td scope="row">Hipervínculos a páginas informativas de productos</td>
+                    <td>$ 15.00</td>
+                </tr>
+                <tr
+                class="table-primary"
+            >
+                <td scope="row">Formularios de suscripción del cliente y contáctanos</td>
+                <td>$20.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <h5>¡¡Vamos haz tu mismo un pequeño presupuesto!! <br> (recuerda solo es un pequeño presupuesto, no el precio real)</h5>
+    <div style="width: auto;" class="container mt-5">
+        <h1 class="mb-4">Cálculo de Precio de Página Web</h1>
+        <div
+            class="table-responsive"
+        >
+            <table border="1"
+                class="table table-primary"
+            >
+            <tr>
+                <td>
+                  </div>
+                    <form id="priceForm">
+                    <div class="form-group">
+                    <label for="bannerQuantity">Cantidad de Banners interactivos de cabecera ($25.00 cada uno)</label>
+                    <input type="number" id="bannerQuantity" class="form-control" value="0" min="0">
+                  </div>
+                    <div class="form-group">
+                     <label for="menuQuantity">Cantidad de Menús desplegables con 3 categorías por productos y servicios con filtros ($20.00 cada uno)</label>
+                     <input type="number" id="menuQuantity" class="form-control" value="0" min="0">
+                  </div>
+                  <div class="form-group">
+                     <label for="galleryQuantity">Cantidad de Galerías de imágenes</label>
+                     <select id="galleryQuantity" class="form-control">
+                     <option value="0">Selecciona la cantidad de imágenes</option>
+                     <option value="25">1-10 imágenes ($25.00)</option>
+                     <option value="30">10-15 imágenes ($30.00)</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="linksQuantity">Cantidad de Hipervínculos a páginas informativas de productos ($15.00 cada uno)</label>
+                     <input type="number" id="linksQuantity" class="form-control" value="0" min="0">
+                   </div>
+                   <div class="form-group">
+                     <label for="formsQuantity">Cantidad de Formularios de suscripción del cliente y contáctanos ($20.00 cada uno)</label>
+                     <input type="number" id="formsQuantity" class="form-control" value="0" min="0">
+                   </div>
+                   <button type="button" class="btn btn-primary" id="calculateButton">Calcular Precio</button>
+                   </form>
+                  </td>
+               </tr>
+             </table>
+            <h2 class="mt-4">Precio Total: $<span id="totalPrice">0.00</span></h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+    
+</div>
+<br>
+<br>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>Derechos de Autor &copy; 2024 Domm's - Innovación en Desarrollo de Software</p>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
